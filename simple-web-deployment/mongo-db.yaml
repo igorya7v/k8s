@@ -1,4 +1,4 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mongodb-deployment
@@ -41,7 +41,7 @@ spec:
   ports:
   - protocol: TCP
     # Service Port
-    ports: 27017
+    port: 27017
     # Container Port
     targetPort: 27017
   
